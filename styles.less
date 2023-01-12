@@ -1,0 +1,117 @@
+@red: red;
+@yellow: yellow;
+@orange:orange;
+
+.max{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    outline: 5px solid #000;
+    margin-top: 15px;
+}
+.main{
+    width: 1500px;
+    height: 150px;
+    position: absolute;
+    outline: 5px solid #000;
+}
+.red{
+    .max;
+    background-color: @red;
+}
+.yellow{
+    .max;
+    background-color: @yellow;
+    margin-left: 500px;
+}
+.orange{
+    .max;
+    background-color: @orange;
+    margin-left: 1000px;
+}
+
+@media screen and (max-width: 1000px) 
+{
+    @red: red;
+    @yellow: yellow;
+    @orange:orange;
+
+.max{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    outline: 5px solid #000;
+    margin-top: 15px;
+}
+
+    .main{
+        width: 360px;
+        height: 300px;
+        position: absolute;
+        outline: 5px solid #000;
+        margin-left: 200px;
+    }
+    .red{
+        .max;
+        background-color: @red;
+        margin-left: 20px;
+    }
+    .yellow{
+        width: 325px;
+        height: 100px;
+        position: absolute;
+        outline: 5px solid #000;
+        margin-top: 150px;
+        background-color: @yellow;
+        margin-left: 20px;
+    }
+    .orange{
+        .max;
+        background-color: @orange;
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 500px) 
+{
+    @red: red;
+    @yellow: yellow;
+    @orange:orange;
+
+.max{
+    width: 200px;
+   
+    position: absolute;
+    outline: 5px solid #000;
+    
+}
+
+    .main{
+        width: 240px;
+        height: 300px;
+        position: absolute;
+        outline: 5px solid #000;
+        margin-left: 100px;
+    }
+    .red{
+        .max;
+        height: 100px;
+        background-color: @red;
+        margin-left: 20px;
+        margin-top: 20px
+    }
+    .yellow{
+      
+        .max;
+        height: 50px;
+        background-color: @yellow;
+        margin-left: 20px;
+        margin-top: 230px;
+    }
+    .orange{
+        .max;
+        height: 70px;
+        background-color: @orange;
+        margin-left: 20px;
+        margin-top: 140px;
+    }
+}
